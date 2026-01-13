@@ -210,7 +210,7 @@ typedef DiscordPresenceOptions = {
     @:optional var instance : Int;
 }
 
-@:enum abstract Reply(Int) from Int to Int {
+#if (haxe_ver >= 4.0) enum #else @:enum #end abstract Reply(Int) from Int to Int {
     var No = 0;
     var Yes = 1;
     var ignore = 2;
